@@ -72,7 +72,6 @@ public class MainActivity extends AppCompatActivity {
             "Migrant People",
             "Online Education",
             "Government Orders",
-            "Tweets",
             "FAQs"
 
     } ;
@@ -94,7 +93,6 @@ public class MainActivity extends AppCompatActivity {
             R.drawable.migrant,
             R.drawable.education,
             R.drawable.governmentorder,
-            R.drawable.tweet,
             R.drawable.faq
 
     };
@@ -117,8 +115,8 @@ public class MainActivity extends AppCompatActivity {
 
         Confirmed = findViewById(R.id.confirmed_count);
         Recovered = findViewById(R.id.cured_count);
-        Tested = findViewById(R.id.tested_count);
-        Deceased  = findViewById(R.id.deceased_count);
+//        Tested = findViewById(R.id.tested_count);
+//        Deceased  = findViewById(R.id.deceased_count);
 
         MainAdapter mainAdapter = new MainAdapter(MainActivity.this, web, imageId);
         Grid_List.setAdapter(mainAdapter);
@@ -224,15 +222,15 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(JSONObject response) {
                         try {
-                            JSONObject jsonObject = response.getJSONObject("MZ").getJSONObject("total");
+                            JSONObject jsonObject = response.getJSONObject("SK").getJSONObject("total");
                             String confirmed = jsonObject.getString("confirmed");
 //                            String deceased = jsonObject.getString("deceased");
-                            String tested = jsonObject.getString("tested");
+//                            String tested = jsonObject.getString("tested");
                             String recovered = jsonObject.getString("recovered");
 
                             Confirmed.setText(confirmed);
 //                            Deceased.setText(deceased);
-                            Tested.setText(tested);
+//                            Tested.setText(tested);
                             Recovered.setText(recovered);
 
                         } catch (JSONException e) {

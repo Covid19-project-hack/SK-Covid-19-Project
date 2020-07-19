@@ -27,15 +27,15 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/nunito_bold"
-            android:layout_toEndOf="@+id/toolbar_icon"
             android:layout_centerVertical="true"
-            android:textSize="15dp"
             android:layout_marginStart="10dp"
-            android:textColor="@color/colorBlack"
-            android:text="Mizoram Dashboard"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/toolbar_icon"
             android:layout_toRightOf="@+id/toolbar_icon"
-            android:layout_marginLeft="10dp" />
+            android:fontFamily="@font/nunito_bold"
+            android:text="Sikkim Dashboard"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp" />
 
         <ImageView
             android:layout_width="25dp"
@@ -64,7 +64,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="100dp"
         android:id="@+id/dashboard"
         android:layout_below="@+id/toolbar"
         android:background="@drawable/rounded_white"
@@ -80,7 +80,7 @@
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:rowCount="2"
+            android:rowCount="1"
             android:columnCount="2"
             android:layout_gravity="center">
 
@@ -115,91 +115,6 @@
 
                     <TextView
                         android:id="@+id/confirmed_count"
-                        android:layout_width="wrap_content"
-                        android:textColor="@color/colorBlack"
-                        android:fontFamily="@font/nunito_bold"
-                        android:text="0"
-                        android:textSize="18dp"
-                        android:layout_height="wrap_content" />
-
-                </LinearLayout>
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp">
-
-                <ImageView
-                    android:id="@+id/deceased_image"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/awaited" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_centerVertical="true"
-                    android:id="@+id/deceased_details"
-                    android:layout_toEndOf="@id/deceased_image"
-                    android:orientation="vertical"
-                    android:layout_marginLeft="5dp"
-                    android:layout_toRightOf="@id/deceased_image">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/colorBlack"
-                        android:text="Decreased"
-                        android:fontFamily="@font/nunito" />
-
-                    <TextView
-                        android:id="@+id/deceased_count"
-                        android:layout_width="wrap_content"
-                        android:textColor="@color/colorBlack"
-                        android:fontFamily="@font/nunito_bold"
-                        android:text="0"
-                        android:textSize="18dp"
-                        android:layout_height="wrap_content" />
-
-                </LinearLayout>
-
-            </RelativeLayout>
-
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp">
-
-                <ImageView
-                    android:id="@+id/tested_image"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/test_cases" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_centerVertical="true"
-                    android:id="@+id/tested_details"
-                    android:layout_toEndOf="@id/tested_image"
-                    android:orientation="vertical"
-                    android:layout_marginLeft="5dp"
-                    android:layout_toRightOf="@id/tested_image">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/colorBlack"
-                        android:text="Tested"
-                        android:fontFamily="@font/nunito" />
-
-                    <TextView
-                        android:id="@+id/tested_count"
                         android:layout_width="wrap_content"
                         android:textColor="@color/colorBlack"
                         android:fontFamily="@font/nunito_bold"
